@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:rabbit_stew"
+    },
+    "title": "Rabbit Stew",
+    "description": "Eat rabbit stew",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "zzz.balanced_diet:meat/rabbit",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:rabbit_stew"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zzz.balanced_diet:health/inc_food_count"
+    }
+  }
+  

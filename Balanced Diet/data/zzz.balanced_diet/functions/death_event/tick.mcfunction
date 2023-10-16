@@ -1,0 +1,2 @@
+execute as @a[tag=!bd.tracker_mode] if score @s bd.death_event matches 1.. run function zzz.balanced_diet:death_event/death
+execute as @a[tag=!bd.tracker_mode] if score @s bd.respawn_event matches 1.. run function zzz.balanced_diet:death_event/respawn

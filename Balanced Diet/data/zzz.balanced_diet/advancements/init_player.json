@@ -1,0 +1,11 @@
+{
+  "parent": "zzz.balanced_diet:root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "zzz.balanced_diet:init"
+    }
+  }

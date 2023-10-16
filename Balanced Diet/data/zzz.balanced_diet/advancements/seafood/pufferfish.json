@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:pufferfish"
+    },
+    "title": "Pufferfish",
+    "description": "Eat a pufferfish",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "zzz.balanced_diet:seafood/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:pufferfish"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zzz.balanced_diet:health/inc_food_count"
+    }
+  }
+  

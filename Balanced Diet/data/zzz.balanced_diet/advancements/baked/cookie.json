@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cookie"
+    },
+    "title": "Cookie",
+    "description": "Eat a cookie",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "zzz.balanced_diet:baked/bread",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:cookie"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zzz.balanced_diet:health/inc_food_count"
+    }
+  }
+  

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potato"
+    },
+    "title": "Potato",
+    "description": "Eat a potato",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "zzz.balanced_diet:produce/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:potato"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zzz.balanced_diet:health/inc_food_count"
+    }
+  }
+  

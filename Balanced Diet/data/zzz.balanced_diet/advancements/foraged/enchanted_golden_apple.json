@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "title": "Enchanted Golden Apple",
+    "description": "Eat an enchanted golden apple",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "zzz.balanced_diet:foraged/apple",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:enchanted_golden_apple"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zzz.balanced_diet:health/inc_food_count"
+    }
+  }
+  

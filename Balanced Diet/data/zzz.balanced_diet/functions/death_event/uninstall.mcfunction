@@ -1,0 +1,2 @@
+scoreboard objectives remove bd.death_event
+scoreboard objectives remove bd.respawn_event
