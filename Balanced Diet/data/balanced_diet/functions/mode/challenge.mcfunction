@@ -1,6 +1,11 @@
 ## As player calling function
 
-# Restores gameplay challenges after having been in tracking mode
-tag @s[tag=bd.tracker_mode] remove bd.tracker_mode
+# If already a challenger, do nothing
+execute as @s[tag=bd.challenger] run return 1
+
+# Add challenger tag to enable features
+tag @s add bd.challenger
+
+# Update challenge health pools
 function zzz.balanced_diet:health/update_hp
 function zzz.balanced_diet:health/update_absorption

@@ -6,9 +6,13 @@
 # All unique food counts and achievements will still activate, enabling modes to be switched at any time for any player without consequences to either mode or affecting other players.
 
 ## Code
-# Do nothing and return if player already as tag
-execute as @s[tag=bd.tracker_mode] run return 1
+# If already not a challenger, do nothing
+execute as @s[tag=!bd.challenger] run return 1
 
-# Add tag and reset stats
-tag @s add bd.tracker_mode
+# Remove challenger tag to reduce down to only tracking features
+tag @s remove bd.challenger
+
+# reset stats to vanilla
 function zzz.balanced_diet:health/reset_to_vanilla_health
+
+
